@@ -1,5 +1,6 @@
 package application;
 
+
 import model.dao.DaoFactory;
 import model.dao.SellerDao;
 import model.entities.Seller;
@@ -10,6 +11,7 @@ public class Program {
 		
 		SellerDao sellerDao = DaoFactory.createSellerDao();	
 		
+		System.out.println("___ TEST 1: Seller findById ____");
 		Seller seller = sellerDao.findyById(3);
 		System.out.println(seller);
 	}
